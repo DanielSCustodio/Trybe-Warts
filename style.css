@@ -1,0 +1,112 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0 150px;
+}
+
+header input {
+  box-sizing: border-box;
+  border: 0;
+  margin: 2px;
+  height: 25px;
+  width: 100px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+header button {
+  box-sizing: border-box;
+  background-color: purple;
+  color: aliceblue;
+  border: 0;
+  border-radius: 5px;
+  padding: 0 25px;
+  margin-left: 10px;
+}
+
+.trybewarts-header-logo {
+  left: 0;
+  top: 0;
+  width: 70px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+main {
+  display: flex;
+  margin: 0 50px;
+}
+
+#evaluation-form {
+  display: flex;
+  box-sizing: border-box;
+  padding: 5px;
+  max-width: 675px; /* Erro requisito 5 era porque a classe pai estava com width de 80% */
+  flex-direction: column; /* assim limitando a largura especificada do requisito */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#input-name {
+  max-width: 150px;
+}
+
+#input-lastname {
+  max-width: 150px;
+}
+
+.row-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+}
+
+.row-wrap input , select {
+  height: 25px;
+  margin: 5px;
+  padding-right: 15%;
+  border-radius: 5px;
+}
+
+#input-email {
+  padding-right: 11%;
+}
+
+select {
+  height: 30px;
+}
+
+#labelone {
+  display: flex;
+  flex-direction: column;
+}
+
+#labeltwo {
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#result{
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	border: solid 1px black;
+}
+

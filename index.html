@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header class="header">
+		<img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
+		<h1 id="trybewarts-header-title">Trybewarts</h1>
+		<form class="trybewarts-login">
+			<input type="text" id="login" placeholder="Login">
+			<input type="password" id="senha" placeholder="Senha">
+			<button id="btn-logar">Logar</button>
+		</form>
+	</header>
+	
+	<main>
+		<form action="" id="evaluation-form">
+			<label class="">Forms</label>
+			<section class="row-wrap">
+				<input type="text" id="input-name" placeholder="Nome">
+				<input type="text" id="input-lastname" placeholder="Sobrenome">
+				<input type="email" id="input-email" placeholder="Email">
+				<label for="house">Casa:</label>
+				<select name="" id="house">
+					<option name="casa" value="Gitnória" id="gitnoria-house">Gitnória</option>
+					<option name="casa" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+					<option name="casa" value="Corvinode" id="corvinode-house">Corvinode</option>
+					<option name="casa" value="Pytherina" id="pytherina-house">Pytherina</option>
+				</select>
+			</section>
+			<label for="" id="label-family">Qual sua família?</label>
+			<div id="labelone">
+				<label for="frontend">
+					<input type="radio" name="family" id="frontend" value="Frontend" checked>Frontend
+				</label>
+				<label for="backend">
+					<input type="radio" name="family" id="backend" value="Backend">Backend
+				</label>
+				<label for="fullstack">
+					<input type="radio" name="family" id="fullstack" value="FullStack">FullStack
+				</label>
+			</div>
+			<label for="" id="label-content" class="arrow-wrap">Qual conteúdo você está com mais vontade de aprender?</label>
+			<div id="labeltwo">
+				<label for="hofs">
+					<input type="checkbox" name="materia" class="subject" value="HoFs" id="hofs">HoFs
+				</label>
+				<label for="jest">
+					<input type="checkbox" name="materia" class="subject" value="Jest" id="jest">Jest
+				</label>
+				<label for="promises">
+					<input type="checkbox" name="materia" class="subject" value="Promises" id="promises">Promises
+				</label>
+				<label for="react">
+					<input type="checkbox" name="materia" class="subject" value="React" id="react">React
+				</label>
+				<label for="sql">
+					<input type="checkbox" name="materia" class="subject" value="SQL" id="sql">SQL
+				</label>
+				<label for="python">
+					<input type="checkbox" name="materia" class="subject" value="Python" id="python">Python
+				</label>
+			</div>
+			<div>
+				<label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+				<input type="radio" name="rate" value="1" checked>1
+				<input type="radio" name="rate" value="2">2
+				<input type="radio" name="rate" value="3">3
+				<input type="radio" name="rate" value="4">4
+				<input type="radio" name="rate" value="5">5
+				<input type="radio" name="rate" value="6">6
+				<input type="radio" name="rate" value="7">7
+				<input type="radio" name="rate" value="8">8
+				<input type="radio" name="rate" value="9">9
+				<input type="radio" name="rate" value="10">10
+			</div>
+			<label for="" class="textarea">
+				Deixe seu comentário:
+				<textarea name="" id="textarea" cols="60" rows="10" maxlength="500"></textarea>
+				<label for="" id="counter">500</label>
+			</label>
+			<label for="" id="label-infos">
+				Você concorda com o uso das informações acima?
+			</label>
+			<input type="checkbox" name="" id="agreement">
+			<button disabled type="submit" id="submit-btn">Enviar</button>
+			<!--Erro do requisito 17 era porque existia quebra de linha dentro da tag-->
+			<div id="result">
+				<!--result-->
+				<label id="r-nome"></label>
+				<label id="r-email"></label>
+				<label id="r-casa"></label>
+				<label id="r-familia"></label>
+				<label id="r-materia"> </label>
+				<label id="r-avaliacao"></label>
+				<label id="r-observacao"></label>
+			</div>
+			<!--result-->
+		</form>
+		<img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
+	</main>
+	
+	<footer>
+		Direitos reservados à Trybewarts©
+	</footer>
+	<script src="script.js"></script>
+</body>
+
+</html>
