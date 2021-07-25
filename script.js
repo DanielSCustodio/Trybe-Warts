@@ -50,7 +50,6 @@ function checkSelect() {
   let checados = '';
   for (let index = 0; index < checks.length; index += 1) {
     if (checks[index].checked) {
-      // eslint-disable-next-line no-useless-concat
       checados += `${checks[index].value},` + ' ';
     }
   }
